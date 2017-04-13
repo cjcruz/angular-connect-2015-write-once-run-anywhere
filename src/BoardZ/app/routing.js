@@ -8,6 +8,7 @@
 			.state('games.detail', getState('gameDetail', '/:gameId'))
 			.state('games.detail.packshot', getState('gamePackshot', '/packshot'))
 			.state('radiusSearch', getState('radiusSearch'))
+			.state('pcbViewer', getState('pcbViewer'))
 			.state('login', {
 				url: '/login?redirectTo',
 				views: {
