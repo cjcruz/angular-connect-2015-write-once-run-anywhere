@@ -6,20 +6,20 @@
      * @constructor
      *
      * @param $scope
-     * @param {Geolocation} geolocation
-     * @param {PlayersApi} playersApi
+     * @param {PcbProject} pcbProject
      */
-    function PcbViewerController($scope, geolocation, playersApi) {
-        $scope.radiuses = [5, 10, 25, 50, 100, 250, 1000];
-        $scope.model = {
-            radius: 10
-        };
+    function PcbViewerController($scope, pcbProject) {
+      init();
 
-        init();
+      function init() {
+      }
 
-        function init() {
-            $scope.test = 10;
-        }
+      $scope.loadFile = function (filename){
+        //when a file is loaded, then the first layer is loaded always
+        pcbProject.getLayer(1, function(data){
+          alert(data);
+        });
+      }
 
     }
 

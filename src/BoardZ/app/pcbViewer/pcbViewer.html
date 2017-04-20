@@ -1,2 +1,19 @@
-<h3>Hola mundo</h3>
-<h3 ng-bind="test"></h3>
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-primary">            
+            <div class="box-body">
+                <input type="file" name="file" id="file" ng-model="loadfile" onchange="angular.element(this).scope().loadFile(this.value)" class="btn btn-primary"/>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-primary">            
+            <div class="box-body">
+                <div id="myCanvas"></div>
+            </div>            
+        </div>
+    </div>
+</div>

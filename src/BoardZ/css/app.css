@@ -30,6 +30,10 @@ h6,
 	font-family: -apple-system-font, "Helvetica Neue", HelveticaNeue, "Roboto", "Segoe WP", "Segoe UI", sans-serif;
 }
 
+.main-header .logo .logo-lg img{
+	max-width: 100px;
+}
+
 body,
 .wrapper {
 	overflow-x: hidden;

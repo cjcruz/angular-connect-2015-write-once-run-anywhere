@@ -10,15 +10,17 @@
     <!-- endinject -->
     <link rel="icon" href="assets/favicon.ico"/>
 </head>
-<body class="hold-transition skin-purple sidebar-mini" body-element>
+<body class="hold-transition skin-blue sidebar-mini" body-element>
 <div class="wrapper">
     <header class="main-header">
         <!-- Logo -->
         <a ui-sref="dashboard" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini" translate="appBranding.shortTitle"></span>
+            <span class="logo-mini">P</span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg" translate="appBranding.title"></span>
+            <span class="logo-lg">
+                <img src="assets/pentalogix_logo.png" class="" />
+            </span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -73,13 +75,7 @@
                     <a ui-sref="dashboard" close-sidebar-on-mobile><i class="fa fa-dashboard"></i> <span translate="dashboard.title"></span></a>
                 </li>
                 <li ui-sref-active="active">
-                    <a ui-sref="games" close-sidebar-on-mobile><i class="fa fa-list"></i> <span translate="gameList.title"></span></a>
-                </li>
-                <li ui-sref-active="active">
-                    <a ui-sref="radiusSearch" close-sidebar-on-mobile><i class="fa fa-location-arrow"></i> <span translate="radiusSearch.title"></span></a>
-                </li>
-                <li ui-sref-active="active">
-                    <a ui-sref="pcbViewer" close-sidebar-on-mobile><i class="fa fa-location-arrow"></i> PcbViewer</a>
+                    <a ui-sref="pcbViewer" close-sidebar-on-mobile><i class="fa fa-cube"></i> <span translate="pcbViewer.title"></span></a>
                 </li>
             </ul>
         </section>
@@ -105,7 +101,7 @@
             <!-- Home tab content -->
             <div class="tab-pane active" id="control-sidebar-home-tab" ng-controller="languageController as language">
                 <h3 class="control-sidebar-heading" translate="sidebar.language"></h3>
-                <button class="btn btn-default" ng-click="language.switchTo('de-DE')" type="button" translate="sidebar.languages.deDE"></button>
+                <button class="btn btn-default" ng-click="language.switchTo('es-US')" type="button" translate="sidebar.languages.esUS"></button>
                 <button class="btn btn-default" ng-click="language.switchTo('en-US')" type="button" translate="sidebar.languages.enUS"></button>
                 <!-- /.control-sidebar-menu -->
             </div>
@@ -117,9 +113,6 @@
     <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
-
-
-<script src="cordova.js"></script>
 
 <!-- inject:js -->
 <!-- endinject -->

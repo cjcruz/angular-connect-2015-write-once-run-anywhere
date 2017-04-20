@@ -9,13 +9,13 @@
     "back": "Back"
   },
   "dashboard": {
-    "title": "Dashboard",
+    "title": "Tablero",
     "boardGames": "Board Games",
     "players": "Players",
     "more": "More info"
   },
   "pcbViewer": {
-    "title": "Pcb Viewer"
+    "title": "Visor PCB"
   },
   "gameList": {
     "title": "Game List",
@@ -34,23 +34,23 @@
     "noShot": "Unfortunately, we do not have a packshot for this game."
   },
   "footer": {
-    "text": "PentaLogix 2017 - All rights reserved."
+    "text": "PentaLogix 2017 - Todos los derechos reservados."
   },
   "sidebar": {
-    "language": "Language",
+    "language": "Idioma",
     "languages": {
-      "enUS": "English",
-      "esUS": "Spanish"
+      "enUS": "Inglés",
+      "esUS": "Español"
     }
   },
   "login": {
-    "title": "Login",
-    "username": "Username",
-    "password": "Password",
-    "cancel": "Cancel",
-    "signIn": "Sign In",
-    "rememberMe": "Remember me",
-    "error": "Login not possible. Please check your inputs and try again!"
+    "title": "Inicio de Sesión",
+    "username": "Usuario",
+    "password": "Contraseña",
+    "cancel": "Cancelar",
+    "signIn": "Iniciar Sesión",
+    "rememberMe": "Recordarme en este equipo",
+    "error": "Inicio de sesión no posible. Revisa tu usuario y contraseña e intenta de nuevo!"
   },
   "gameDetails": {
     "success": "Game details have been updated successfully!",

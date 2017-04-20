@@ -15,15 +15,7 @@
 		init();
 
 		function init() {
-			playersApi.list()
-				.then(function (results) {
-					$scope.playerCount = results.length;
-				});
-
-			boardGamesApi.list()
-				.then(function (results) {
-					$scope.gameCount = results.length;
-				});
+			
 		}
 	}
 	
