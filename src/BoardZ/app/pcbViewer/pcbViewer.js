@@ -14,13 +14,19 @@
       function init() {
       }
 
-      $scope.loadFile = function (filename){
+      $scope.loadFile = function (filename, done){
         //when a file is loaded, then the first layer is loaded always
         pcbProject.getLayer(1, function(data){
-          alert(data);
+          done(data);
         });
       }
 
+      $scope.getLayer = function (number_of_layer, done){
+        //when a file is loaded, then the first layer is loaded always
+        pcbProject.getLayer(number_of_layer, function(data){
+          done(data);
+        });
+      }
     }
 
     app.module.controller('pcbViewerController', PcbViewerController);
