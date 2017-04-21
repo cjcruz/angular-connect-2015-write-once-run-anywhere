@@ -22,7 +22,7 @@
           assemblyFile: '../TheBrainWindows.dll'
         });
 
-        getLayer(1, function (error, result) {
+        getLayer(number, function (error, result) {
             if (error) throw error;
             done(result);
         });
